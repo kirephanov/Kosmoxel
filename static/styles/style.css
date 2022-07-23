@@ -1,0 +1,463 @@
+:root {
+    --dark: #181818;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 18px;
+    color: #fff;
+    background-color: var(--dark);
+    overflow-x: hidden;
+}
+
+*::selection {
+    background-color: #495057;
+}
+
+*::-moz-selection {
+    background-color: #495057;
+}
+
+.wrapper {
+	max-width: 1180px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin: 0 auto;
+}
+
+/******************* Scrollbar **********************/
+
+/* Firefox */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #343a40 var(--dark);
+}
+  
+/* Chrome, Edge, Safari */
+body::-webkit-scrollbar {
+    width: 12px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: var(--dark);
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #343a40;
+    border-radius: 20px;
+    border: 3px solid var(--dark);
+}
+
+/******************* Home page **********************/
+
+.show-block {
+    opacity: 0;
+    transform: translateY(20px);
+}
+.show-block.show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+}
+
+/*
+* Tagline
+*/
+.tagline {
+    text-align: center;
+    margin-top: 280px;
+    margin-bottom: 250px;
+}
+.title {
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.tagline__description {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+.tagline__img {
+    width: 88px;
+    height: 35px;
+    background-image: url("../images/Home/arrow-bottom.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0 auto;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+/* 
+* Space
+*/
+.space {
+    text-align: center;
+}
+.space__item {
+    margin-top: 0;
+    margin-bottom: 250px;
+}
+.space__link {
+    text-decoration: none;
+}
+.space__name {
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+/* Sun */
+.space__sun-img {
+    max-width: 960px;
+    filter: none;
+    transition: 0.5s ease filter;
+}
+.space__sun-img:hover {
+    filter: drop-shadow(0px 0px 32px #FF7F27);
+}
+
+/* Mercury */
+.space__mercury-img {
+    max-width: 280px;
+    filter: none;
+    transition: 0.5s ease filter;
+}
+.space__mercury-img:hover {
+    filter: drop-shadow(0px 0px 32px #D1BA79);
+}
+
+/* Venus */
+.space__venus-img {
+    max-width: 350px;
+    filter: none;
+    transition: 0.5s ease filter;
+}
+.space__venus-img:hover {
+    filter: drop-shadow(0px 0px 32px #BCC8CF);
+}
+
+/* Earth */
+.space__item__earth {
+    display: flex;
+    align-items: flex-start;
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+}
+.space__moon-img {
+    max-width: 150px;
+    filter: none;
+    transition: 0.5s ease filter;
+    margin-right: 20px;
+}
+.space__moon-img:hover {
+    filter: drop-shadow(0px 0px 32px #BABABA);
+}
+.space__earth-img {
+    max-width: 380px;
+    filter: none;
+    transition: 0.5s ease filter;
+}
+.space__earth-img:hover {
+    filter: drop-shadow(0px 0px 32px #3F48CC);
+}
+
+/* Mars */
+.space__mars-img {
+    max-width: 320px;
+    filter: none;
+    transition: 0.5s ease filter;
+}
+.space__mars-img:hover {
+    filter: drop-shadow(0px 0px 32px #D9723B);
+}
+
+/* Asteroid belt */
+.asteroid-belt {
+    width: 1080px;
+    height: 180px;
+    margin: 0 auto;
+    background-image: url("../images/Home/Planets/asteroid-beld.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+
+/* Jupiter */
+.space__jupiter-img {
+    max-width: 700px;
+    filter: none;
+    transition: 0.5s ease filter;
+}
+.space__jupiter-img:hover {
+    filter: drop-shadow(0px 0px 32px #F75B63);
+}
+
+/* Saturn */
+.space__saturn-img {
+    max-width: 1060px;
+    filter: none;
+    transition: 0.5s ease filter;
+}
+.space__saturn-img:hover {
+    filter: drop-shadow(0px 0px 32px #AAB8BF);
+}
+
+/* Uranus */
+.space__uranus-img {
+    max-width: 550px;
+    filter: none;
+    transition: 0.5s ease filter;
+}
+.space__uranus-img:hover {
+    filter: drop-shadow(0px 0px 32px #91D0E6);
+}
+
+/* Neptune */
+.space__neptune-img {
+    max-width: 550px;
+    filter: none;
+    transition: 0.5s ease filter;
+}
+.space__neptune-img:hover {
+    filter: drop-shadow(0px 0px 32px #4750DE);
+}
+
+/* Asteroid belt */
+.kuiper-belt {
+    width: 1080px;
+    height: 285px;
+    margin: 0 auto;
+    background-image: url("../images/Home/Planets/kuip-beld.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+
+/*
+* Footer
+*/
+.border {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 40px;
+}
+.footer__arrow-up {
+    width: 88px;
+    margin: 0 auto;
+    cursor: pointer;
+    filter: none;
+    transition: 0.5s ease filter;
+}
+.footer__arrow-up:hover {
+    filter: drop-shadow(0px 0px 16px #fff);
+}
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.footer__content-item__description {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+.watermark {
+    color: #E5E5E5;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+.watermark-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    text-shadow: none;
+    transition: 0.5s ease text-shadow;
+}
+.watermark-link:hover {
+    text-shadow: 0px 0px 16px #FFFFFF;
+}
+
+/******************* Planet page **********************/
+.planet-info {
+    margin-top: 95px;
+    margin-bottom: 100px;
+}
+.planet-info__title {
+    text-align: center;
+}
+.planet-info__img-container {
+    text-align: center;
+}
+.planet-info__img {
+    max-width: 400px;
+    max-height: 400px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.planet-info__description {
+    line-height: 36px;
+    text-indent: 45px;
+}
+
+/******************* Media queries **********************/
+@media (max-width: 1085px) {
+    /* Space */
+    .space__sun-img {
+        max-width: 400px;
+    }
+    .space__jupiter-img {
+        max-width: 400px;
+    }
+    .space__saturn-img {
+        max-width: 90%;
+    }
+    .space__uranus-img {
+        max-width: 400px;
+    }
+    .space__neptune-img {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 990px) {
+    /* Footer */
+    .footer__content {
+        flex-direction: column;
+    }
+    .footer__content-item-top {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 725px) {
+    /* Tagline */
+    .tagline {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Space */
+    .space__moon-img {
+        max-width: 50px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    /* Space */
+    .space__sun-img {
+        max-width: 300px;
+    }
+    .space__mercury-img {
+        max-width: 300px;
+    }
+    .space__venus-img {
+        max-width: 300px;
+    }
+    .space__earth-img {
+        max-width: 300px;
+    }
+    .space__mars-img {
+        max-width: 300px;
+    }
+    .space__jupiter-img {
+        max-width: 300px;
+    }
+    .space__saturn-img {
+        max-width: 100%;
+    }
+    .space__uranus-img {
+        max-width: 300px;
+    }
+    .space__neptune-img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 450px) {
+    /* Plane page */
+    .planet-info__img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
+
+@media (max-width: 400px) {
+    .title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    /* Tagline */
+    .tagline__description {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    /* Space */
+    .space__sun-img {
+        max-width: 200px;
+    }
+    .space__mercury-img {
+        max-width: 200px;
+    }
+    .space__venus-img {
+        max-width: 200px;
+    }
+    .space__earth-img {
+        max-width: 200px;
+    }
+    .space__mars-img {
+        max-width: 200px;
+    }
+    .space__jupiter-img {
+        max-width: 200px;
+    }
+    .space__uranus-img {
+        max-width: 200px;
+    }
+    .space__neptune-img {
+        max-width: 200px;
+    }
+
+    /* Footer */
+    .footer__content-item__description {
+        font-size: 12px;
+    }
+    .watermark {
+        font-size: 12px;
+    }
+    .watermark-link {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 300px) {
+    /* Space */
+    .space__earth-img {
+        max-width: 175px;
+    }
+}
